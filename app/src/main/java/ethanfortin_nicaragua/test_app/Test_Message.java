@@ -1,12 +1,18 @@
 package ethanfortin_nicaragua.test_app;
 
 import android.annotation.SuppressLint;
+import android.content.DialogInterface;
 import android.support.v7.app.ActionBar;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.os.Handler;
 import android.view.MotionEvent;
 import android.view.View;
+import android.app.Activity;
+import android.view.Menu;
+import android.view.View;
+import android.widget.Button;
 
 /**
  * An example full-screen activity that shows and hides the system UI (i.e.
@@ -89,6 +95,7 @@ public class Test_Message extends AppCompatActivity {
 
         setContentView(R.layout.activity_test__message);
 
+
         mVisible = true;
         mControlsView = findViewById(R.id.fullscreen_content_controls);
         mContentView = findViewById(R.id.fullscreen_content);
@@ -106,7 +113,34 @@ public class Test_Message extends AppCompatActivity {
         // operations to prevent the jarring behavior of controls going away
         // while interacting with the UI.
     }
+    public void buttonOnClick(View v)
+    {
 
+        Button partYmode=(Button) v;
+        ((Button) v).setText("clickeD");
+
+    }
+    public void buttonOnClick1(View v)
+    {
+        Button button=(Button) v;
+        ((Button) v).setText("Go To partYmode");
+    }
+
+    public void sleepOnClick(View v)
+    {
+        AlertDialog alert = new AlertDialog.Builder(Test_Message.this).create();
+        alert.setTitle("No sleep, go partY");
+        alert.setMessage("Turnip or Transfer");
+        alert.setButton("tImE tO PaRtY", new DialogInterface.sleepOnClick()
+        {
+        public void sleepOnClick(
+                    DialogInterface dialog, int which ){};
+
+
+        };
+                alert.show();
+
+    }
     @Override
     protected void onPostCreate(Bundle savedInstanceState) {
         super.onPostCreate(savedInstanceState);
@@ -159,4 +193,7 @@ public class Test_Message extends AppCompatActivity {
         mHideHandler.removeCallbacks(mHideRunnable);
         mHideHandler.postDelayed(mHideRunnable, delayMillis);
     }
+
+
 }
+

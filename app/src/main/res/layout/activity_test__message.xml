@@ -47,14 +47,24 @@
             android:layout_gravity="left|top"
             android:textColorHighlight="#ea0f0f"
             android:textColor="#c42626"
-            android:background="#0b0b0b" />
+            android:background="#0b0b0b"
+            android:nestedScrollingEnabled="false"
+            android:onClick="buttonOnClick1" />
 
         <Button
-            android:layout_width="wrap_content"
+            android:layout_width="117dp"
             android:layout_height="162dp"
-            android:text="New Buttonc"
-            android:id="@+id/button2"
-            android:layout_gravity="center_horizontal|top" />
+            android:text="Sleep Mode"
+            android:id="@+id/Sleep_Mode"
+            android:layout_gravity="center_horizontal|top"
+            android:textColor="#fefdfd"
+            android:typeface="sans"
+            android:visibility="visible"
+            android:background="#98e2ff"
+            android:textSize="20dp"
+            android:textAlignment="inherit"
+            android:width="25dp"
+            android:onClick="sleepOnClick" />
 
         <Button
             android:layout_width="wrap_content"
@@ -99,11 +109,18 @@
             android:layout_gravity="center_horizontal|bottom" />
 
         <Button
-            android:layout_width="wrap_content"
+            android:layout_width="115dp"
             android:layout_height="162dp"
             android:text="Party Mode"
-            android:id="@+id/button9"
-            android:layout_gravity="right|bottom" />
+            android:id="@+id/partYmode"
+            android:layout_gravity="right|bottom"
+            android:background="#0ef51a"
+            android:textColor="#96075a"
+            android:textSize="35dp"
+            android:typeface="serif"
+            android:visibility="visible"
+            android:onClick="buttonOnClick"
+            android:enabled="true" />
 
     </FrameLayout>
 
