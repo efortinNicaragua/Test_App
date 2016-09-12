@@ -1,0 +1,110 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0099cc"
+    tools:context="ethanfortin_nicaragua.test_app.Test_Message">
+
+    <!-- The primary full-screen view. This can be replaced with whatever view
+         is needed to present your content, e.g. VideoView, SurfaceView,
+         TextureView, etc. -->
+    <TextView
+        android:id="@+id/fullscreen_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:keepScreenOn="true"
+        android:text="@string/dummy_content"
+        android:textColor="#33b5e5"
+        android:textSize="50sp"
+        android:textStyle="bold" />
+
+    <!-- This FrameLayout insets its children based on system windows using
+         android:fitsSystemWindows. -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        android:layout_gravity="right|bottom">
+
+        <LinearLayout
+            android:id="@+id/fullscreen_content_controls"
+            style="?metaButtonBarStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:background="@color/black_overlay"
+            android:orientation="horizontal"
+            tools:ignore="UselessParent">
+
+        </LinearLayout>
+
+        <Button
+            android:layout_width="112dp"
+            android:layout_height="162dp"
+            android:text="Study Mode"
+            android:id="@+id/button"
+            android:layout_gravity="left|top"
+            android:textColorHighlight="#ea0f0f"
+            android:textColor="#c42626"
+            android:background="#0b0b0b" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="162dp"
+            android:text="New Buttonc"
+            android:id="@+id/button2"
+            android:layout_gravity="center_horizontal|top" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="162dp"
+            android:text="New Buttonc"
+            android:id="@+id/button3"
+            android:layout_gravity="right|top" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="162dp"
+            android:text="New Buttonc"
+            android:id="@+id/button4"
+            android:layout_gravity="left|center_vertical" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="162dp"
+            android:text="New Buttonc"
+            android:id="@+id/button5"
+            android:layout_gravity="center" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="162dp"
+            android:text="New Buttonc"
+            android:id="@+id/button6"
+            android:layout_gravity="right|center_vertical" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="162dp"
+            android:text="New Buttonc"
+            android:id="@+id/button7"
+            android:layout_gravity="left|bottom" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="162dp"
+            android:text="New Buttonc"
+            android:id="@+id/button8"
+            android:layout_gravity="center_horizontal|bottom" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="162dp"
+            android:text="Party Mode"
+            android:id="@+id/button9"
+            android:layout_gravity="right|bottom" />
+
+    </FrameLayout>
+
+</FrameLayout>
